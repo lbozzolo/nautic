@@ -176,11 +176,11 @@ return [
         /*
          * Application Service Providers...
          */
-        Ramiroquai\Providers\AppServiceProvider::class,
-        Ramiroquai\Providers\AuthServiceProvider::class,
-        // Ramiroquai\Providers\BroadcastServiceProvider::class,
-        Ramiroquai\Providers\EventServiceProvider::class,
-        Ramiroquai\Providers\RouteServiceProvider::class,
+        Nautic\Providers\AppServiceProvider::class,
+        Nautic\Providers\AuthServiceProvider::class,
+        // Nautic\Providers\BroadcastServiceProvider::class,
+        Nautic\Providers\EventServiceProvider::class,
+        Nautic\Providers\RouteServiceProvider::class,
         /*
          * GUI Interface - Generator Builder...
          */

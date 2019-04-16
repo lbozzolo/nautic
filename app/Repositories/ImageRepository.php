@@ -1,13 +1,13 @@
 <?php
 
-namespace Ramiroquai\Repositories;
+namespace Nautic\Repositories;
 
-use Ramiroquai\Models\Image;
+use Nautic\Models\Image;
 use InfyOm\Generator\Common\BaseRepository;
 
 /**
  * Class ImageRepository
- * @package Ramiroquai\Repositories
+ * @package Nautic\Repositories
  * @version September 3, 2018, 10:53 pm UTC
  *
  * @method Image findWithoutFail($id, $columns = ['*'])

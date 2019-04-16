@@ -1,6 +1,6 @@
 <?php
 
-namespace Ramiroquai\Providers;
+namespace Nautic\Providers;
 
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
@@ -13,7 +13,7 @@ class AuthServiceProvider extends ServiceProvider
      * @var array
      */
     protected $policies = [
-        'Ramiroquai\Model' => 'Ramiroquai\Policies\ModelPolicy',
+        'Nautic\Model' => 'Nautic\Policies\ModelPolicy',
     ];
 
     /**

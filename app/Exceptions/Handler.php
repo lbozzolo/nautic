@@ -1,6 +1,6 @@
 <?php
 
-namespace Ramiroquai\Exceptions;
+namespace Nautic\Exceptions;
 
 use Exception;
 use Illuminate\Auth\AuthenticationException;

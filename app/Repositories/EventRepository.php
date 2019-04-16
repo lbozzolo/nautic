@@ -1,13 +1,13 @@
 <?php
 
-namespace Ramiroquai\Repositories;
+namespace Nautic\Repositories;
 
-use Ramiroquai\Models\Event;
+use Nautic\Models\Event;
 use InfyOm\Generator\Common\BaseRepository;
 
 /**
  * Class EventRepository
- * @package Ramiroquai\Repositories
+ * @package Nautic\Repositories
  * @version September 3, 2018, 10:38 pm UTC
  *
  * @method Work findWithoutFail($id, $columns = ['*'])

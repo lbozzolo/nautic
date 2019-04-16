@@ -1,6 +1,6 @@
 <?php
 
-namespace Ramiroquai\Http\Middleware;
+namespace Nautic\Http\Middleware;
 
 use Illuminate\Cookie\Middleware\EncryptCookies as BaseEncrypter;
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace Ramiroquai\Http\Requests;
+namespace Nautic\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use Ramiroquai\Models\Slider;
+use Nautic\Models\Slider;
 
 class CreateSliderRequest extends FormRequest
 {

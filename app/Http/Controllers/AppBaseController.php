@@ -1,6 +1,6 @@
 <?php
 
-namespace Ramiroquai\Http\Controllers;
+namespace Nautic\Http\Controllers;
 
 use InfyOm\Generator\Utils\ResponseUtil;
 use Response;

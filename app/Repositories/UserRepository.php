@@ -1,13 +1,13 @@
 <?php
 
-namespace Ramiroquai\Repositories;
+namespace Nautic\Repositories;
 
-use Ramiroquai\User;
+use Nautic\User;
 use InfyOm\Generator\Common\BaseRepository;
 
 /**
  * Class ColorRepository
- * @package Ramiroquai\Repositories
+ * @package Nautic\Repositories
  * @version September 3, 2018, 10:45 pm UTC
  *
  * @method Color findWithoutFail($id, $columns = ['*'])

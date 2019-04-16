@@ -1,9 +1,9 @@
 <?php
 
-namespace Ramiroquai\Http\Requests;
+namespace Nautic\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use Ramiroquai\Models\Image;
+use Nautic\Models\Image;
 
 class UpdateImageRequest extends FormRequest
 {

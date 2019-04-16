@@ -1,8 +1,8 @@
 <?php
 
-namespace Ramiroquai\Repositories;
+namespace Nautic\Repositories;
 
-use Ramiroquai\Models\Media;
+use Nautic\Models\Media;
 use InfyOm\Generator\Common\BaseRepository;
 
 class MediaRepository extends BaseRepository

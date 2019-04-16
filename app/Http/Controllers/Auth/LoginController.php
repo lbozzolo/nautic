@@ -1,10 +1,10 @@
 <?php
 
-namespace Ramiroquai\Http\Controllers\Auth;
+namespace Nautic\Http\Controllers\Auth;
 
-use Ramiroquai\Http\Controllers\Controller;
-use Ramiroquai\Models\Medico;
-use Ramiroquai\User;
+use Nautic\Http\Controllers\Controller;
+use Nautic\Models\Medico;
+use Nautic\User;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;

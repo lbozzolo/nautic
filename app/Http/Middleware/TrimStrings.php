@@ -1,6 +1,6 @@
 <?php
 
-namespace Ramiroquai\Http\Middleware;
+namespace Nautic\Http\Middleware;
 
 use Illuminate\Foundation\Http\Middleware\TrimStrings as BaseTrimmer;
 

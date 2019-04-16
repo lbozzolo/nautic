@@ -1,12 +1,12 @@
 <?php
 
-namespace Ramiroquai\Models;
+namespace Nautic\Models;
 
 use Eloquent as Model;
 
 /**
  * Class Image
- * @package Ramiroquai\Models
+ * @package Nautic\Models
  * @version September 3, 2018, 10:53 pm UTC
  *
  * @property string path

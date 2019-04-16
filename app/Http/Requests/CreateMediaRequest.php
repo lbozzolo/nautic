@@ -1,9 +1,9 @@
 <?php
 
-namespace Ramiroquai\Http\Requests;
+namespace Nautic\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use Ramiroquai\Models\Media;
+use Nautic\Models\Media;
 
 class CreateMediaRequest extends FormRequest
 {

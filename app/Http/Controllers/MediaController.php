@@ -1,11 +1,11 @@
 <?php
 
-namespace Ramiroquai\Http\Controllers;
+namespace Nautic\Http\Controllers;
 
-use Ramiroquai\Http\Requests\CreateMediaRequest;
-use Ramiroquai\Repositories\MediaRepository;
-use Ramiroquai\Http\Controllers\AppBaseController as AppBaseController;
-use Ramiroquai\Models\Image;
+use Nautic\Http\Requests\CreateMediaRequest;
+use Nautic\Repositories\MediaRepository;
+use Nautic\Http\Controllers\AppBaseController as AppBaseController;
+use Nautic\Models\Image;
 
 class MediaController extends AppBaseController
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Ramiroquai\Http\Controllers;
+namespace Nautic\Http\Controllers;
 
-use Ramiroquai\Http\Requests\CreateCategoryRequest;
-use Ramiroquai\Http\Requests\UpdateCategoryRequest;
-use Ramiroquai\Repositories\CategoryRepository;
-use Ramiroquai\Http\Controllers\AppBaseController as AppBaseController;
+use Nautic\Http\Requests\CreateCategoryRequest;
+use Nautic\Http\Requests\UpdateCategoryRequest;
+use Nautic\Repositories\CategoryRepository;
+use Nautic\Http\Controllers\AppBaseController as AppBaseController;
 
 class CategoryController extends AppBaseController
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Ramiroquai\Providers;
+namespace Nautic\Providers;
 
 use Illuminate\Support\Facades\Event;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -13,8 +13,8 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        'Ramiroquai\Events\Event' => [
-            'Ramiroquai\Listeners\EventListener',
+        'Nautic\Events\Event' => [
+            'Nautic\Listeners\EventListener',
         ],
     ];
 

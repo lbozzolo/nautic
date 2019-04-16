@@ -1,9 +1,9 @@
 <?php
 
-namespace Ramiroquai\Models;
+namespace Nautic\Models;
 
 use Eloquent as Model;
-use Ramiroquai\Models\Image as Image;
+use Nautic\Models\Image as Image;
 
 class Entity extends Model
 {

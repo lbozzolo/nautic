@@ -1,8 +1,8 @@
 <?php
 
-namespace Ramiroquai\Http\Controllers\Auth;
+namespace Nautic\Http\Controllers\Auth;
 
-use Ramiroquai\Http\Controllers\Controller;
+use Nautic\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
 
 class ForgotPasswordController extends Controller

@@ -1,12 +1,12 @@
 <?php
 
-namespace Ramiroquai\Http\Controllers;
+namespace Nautic\Http\Controllers;
 
-use Ramiroquai\Http\Requests\CreateSliderRequest;
-use Ramiroquai\Http\Requests\UpdateSliderRequest;
-use Ramiroquai\Repositories\SliderRepository;
-use Ramiroquai\Http\Controllers\AppBaseController as AppBaseController;
-use Ramiroquai\Models\Slider;
+use Nautic\Http\Requests\CreateSliderRequest;
+use Nautic\Http\Requests\UpdateSliderRequest;
+use Nautic\Repositories\SliderRepository;
+use Nautic\Http\Controllers\AppBaseController as AppBaseController;
+use Nautic\Models\Slider;
 
 class SliderController extends AppBaseController
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Ramiroquai\Http\Middleware;
+namespace Nautic\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Auth;

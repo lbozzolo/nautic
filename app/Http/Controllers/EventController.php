@@ -1,11 +1,11 @@
 <?php
 
-namespace Ramiroquai\Http\Controllers;
+namespace Nautic\Http\Controllers;
 
-use Ramiroquai\Http\Requests\CreateEventRequest;
-use Ramiroquai\Http\Requests\UpdateEventRequest;
-use Ramiroquai\Repositories\EventRepository;
-use Ramiroquai\Http\Controllers\AppBaseController as AppBaseController;
+use Nautic\Http\Requests\CreateEventRequest;
+use Nautic\Http\Requests\UpdateEventRequest;
+use Nautic\Repositories\EventRepository;
+use Nautic\Http\Controllers\AppBaseController as AppBaseController;
 
 class EventController extends AppBaseController
 {

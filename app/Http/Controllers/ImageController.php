@@ -1,13 +1,13 @@
 <?php
 
-namespace Ramiroquai\Http\Controllers;
+namespace Nautic\Http\Controllers;
 
-use Ramiroquai\Repositories\ImageRepository;
-use Ramiroquai\Http\Controllers\AppBaseController as AppBaseController;
+use Nautic\Repositories\ImageRepository;
+use Nautic\Http\Controllers\AppBaseController as AppBaseController;
 use Illuminate\Support\Facades\File;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
-use Ramiroquai\Models\Image;
+use Nautic\Models\Image;
 use Intervention\Image\Facades\Image as Intervention;
 
 class ImageController extends AppBaseController

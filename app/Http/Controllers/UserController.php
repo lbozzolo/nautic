@@ -1,11 +1,11 @@
 <?php
 
-namespace Ramiroquai\Http\Controllers;
+namespace Nautic\Http\Controllers;
 
-use Ramiroquai\Http\Requests\CreateUserRequest;
-use Ramiroquai\Http\Requests\UpdateUserRequest;
-use Ramiroquai\Repositories\UserRepository;
-use Ramiroquai\Http\Controllers\AppBaseController as AppBaseController;
+use Nautic\Http\Requests\CreateUserRequest;
+use Nautic\Http\Requests\UpdateUserRequest;
+use Nautic\Repositories\UserRepository;
+use Nautic\Http\Controllers\AppBaseController as AppBaseController;
 use Illuminate\Http\Request;
 use Flash;
 use Illuminate\Support\Facades\Auth;

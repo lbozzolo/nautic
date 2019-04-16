@@ -1,8 +1,8 @@
 <?php
 
-namespace Ramiroquai\Repositories;
+namespace Nautic\Repositories;
 
-use Ramiroquai\Models\Category;
+use Nautic\Models\Category;
 use InfyOm\Generator\Common\BaseRepository;
 
 class CategoryRepository extends BaseRepository

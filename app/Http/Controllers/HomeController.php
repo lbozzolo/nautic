@@ -1,11 +1,11 @@
 <?php
 
-namespace Ramiroquai\Http\Controllers;
+namespace Nautic\Http\Controllers;
 
-use Ramiroquai\Models\Category;
-use Ramiroquai\Models\Work;
-use Ramiroquai\Models\Noticia;
-use Ramiroquai\Models\Servicio;
+use Nautic\Models\Category;
+use Nautic\Models\Work;
+use Nautic\Models\Noticia;
+use Nautic\Models\Servicio;
 use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller

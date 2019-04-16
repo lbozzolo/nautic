@@ -1,18 +1,18 @@
 <?php
 
-namespace Ramiroquai\Http\Controllers;
+namespace Nautic\Http\Controllers;
 
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\URL;
-use Ramiroquai\Http\Controllers\AppBaseController as AppBaseController;
-use Ramiroquai\Http\Requests\ContactRequest;
-use Ramiroquai\Http\Requests\CreateApplicantRequest;
-use Ramiroquai\Models\Applicant;
-use Ramiroquai\Models\Category;
+use Nautic\Http\Controllers\AppBaseController as AppBaseController;
+use Nautic\Http\Requests\ContactRequest;
+use Nautic\Http\Requests\CreateApplicantRequest;
+use Nautic\Models\Applicant;
+use Nautic\Models\Category;
 use Illuminate\Support\Facades\Mail;
-use Ramiroquai\Models\Image;
-use Ramiroquai\Models\Slider;
-use Ramiroquai\Models\Work;
+use Nautic\Models\Image;
+use Nautic\Models\Slider;
+use Nautic\Models\Work;
 
 class WebController extends AppBaseController
 {
