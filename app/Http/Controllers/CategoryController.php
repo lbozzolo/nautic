@@ -42,6 +42,7 @@ class CategoryController extends AppBaseController
         $this->destroy_failure_message = ($this->gender == 'M')? 'Ocurrió un error. No se pudo eliminar el'.ucfirst($this->modelSpanish).' especificado' : 'Ocurrió un error. No se pudo eliminar la'.ucfirst($this->modelSpanish).' especificada';
         $this->no_results_message = ($this->gender == 'M')? 'No hay ningún '.$this->modelSpanish. ' cargado en el sistema.' : 'No hay ninguna '. $this->modelSpanish . ' cargada en el sistema.';
 
+        // Envío de valores para las vistas
         $this->data['model'] = $this->model;
         $this->data['gender'] = $this->gender;
         $this->data['modelPlural'] = $this->modelPlural;

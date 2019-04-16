@@ -38,10 +38,7 @@ class ImageController extends AppBaseController
 
     public function verImage($file)
     {
-        $ruta = storage_path("imagenes\\".$file);
-
-        return response()->make(File::get($ruta),200)
-            ->header('Content-Type', 'image/jpg');
+        return response()->make(File::get(storage_path("imagenes\\".$file)),200)->header('Content-Type', 'image/jpg');
     }
 
     public function changeFileNameIfExists($file)
@@ -106,7 +103,7 @@ class ImageController extends AppBaseController
             $img_thumb = Intervention::make($request->file('img'))->resize(config('sistema.imagenes.WIDTH_THUMB'), config('sistema.imagenes.HEIGHT_THUMB'));
         }
 
-        $class = 'Ramiroquai\Models\\'.$class;
+        $class = 'Nobre\Models\\'.$class;
         $model = $class::find($id);
 
         // Redirección si supera el máximo de fotos permitido
@@ -124,9 +121,10 @@ class ImageController extends AppBaseController
             // Confirma que el archivo no exista en el destino
             $nombre = $this->changeFileNameIfExists($file);
 
+            $imagenInt = Intervention::make($request->file('img'))->encode('jpg', 50);
+
+            $imagenInt->save(public_path('/imagenes/'). $nombre);
             $imagen = Image::create(['path' => $nombre, 'main' => 0]);
-            $imagen->title = ($request->title)? $request->title : '';
-            $file->move(public_path('imagenes'), $nombre);
 
             $model->images()->save($imagen);
 
@@ -169,13 +167,14 @@ class ImageController extends AppBaseController
             // Confirma que el archivo no exista en el destino
             $nombre = $this->changeFileNameIfExists($file);
 
-            $imagen = Image::create(['path' => $nombre, 'main' => 0, 'type' => $type]);
-            $imagen->title = ($request->title)? $request->title : '';
-            $file->move(public_path('imagenes'), $nombre);
+            $imagenInt = Intervention::make($request->file('img'))->encode('jpg', 50);
 
+            $imagenInt->save(public_path('/imagenes/'). $nombre);
+            $imagen = Image::create(['path' => $nombre, 'main' => 0, 'type' => $type]);
 
             $image_thumb = $this->makeThumb($img_thumb, $nombre, null, $type);
             $imagen->thumbnail_id = $image_thumb->id;
+
             $imagen->save();
 
             $status = "uploaded";

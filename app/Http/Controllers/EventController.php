@@ -33,6 +33,7 @@ class EventController extends AppBaseController
         $this->modelPlural = 'events';
         $this->modelSpanish = 'evento';
         $this->modelSpanishPlural = 'eventos';
+
         $this->store_success_message = ($this->gender == 'M')? ucfirst($this->modelSpanish).' creado con éxito' : ucfirst($this->modelSpanish).' creada con éxito';
         $this->store_failure_message = ($this->gender == 'M')? 'Ocurrió un error. No se pudo crear el'.ucfirst($this->modelSpanish) : 'Ocurrió un error. No se pudo crear la'.ucfirst($this->modelSpanish);
         $this->show_failure_message = ($this->gender == 'M')? 'No se encontró el'.ucfirst($this->modelSpanish.' especificado') : 'No se encontró la'.ucfirst($this->modelSpanish.' especificada');
@@ -42,6 +43,7 @@ class EventController extends AppBaseController
         $this->destroy_failure_message = ($this->gender == 'M')? 'Ocurrió un error. No se pudo eliminar el'.ucfirst($this->modelSpanish).' especificado' : 'Ocurrió un error. No se pudo eliminar la'.ucfirst($this->modelSpanish).' especificada';
         $this->no_results_message = ($this->gender == 'M')? 'No hay ningún '.$this->modelSpanish. ' cargado en el sistema.' : 'No hay ninguna '. $this->modelSpanish . ' cargada en el sistema.';
 
+        // Envío de valores para las vistas
         $this->data['model'] = $this->model;
         $this->data['gender'] = $this->gender;
         $this->data['modelPlural'] = $this->modelPlural;

@@ -10,12 +10,12 @@ class Entity extends Model
 
     public function getFechaCreadoAttribute()
     {
-        return date_format($this->attributes('created_at'),"d/m/Y");
+        return ($this->created_at)? date_format($this->created_at,"d/m/Y") : '';
     }
 
     public function getFechaEditadoAttribute()
     {
-        return date_format($this->attributes('updated_at'),"d/m/Y");
+        return ($this->updated_at)? date_format($this->updated_at,"d/m/Y") : '';
     }
 
     public function images()
