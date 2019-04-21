@@ -18,8 +18,8 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('generator_builder/generate', '\InfyOm\GeneratorBuilder\Controllers\GeneratorBuilderController@generate');
 
     // Sidebar Web
-
     Route::resource('users', 'UserController');
+ 
 
     Route::resource('events', 'EventController');
 
@@ -33,7 +33,7 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::get('medias/create/present', [
         'as' => 'medias.create.present',
-        'uses' => 'MediaController@createPresent'
+        'uses' => 'MediaController@createPresent',
     ]);
 
 

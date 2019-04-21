@@ -13,6 +13,7 @@ use Prettus\Repository\Criteria\RequestCriteria;
 use Response;
 use Illuminate\Support\Facades\Hash;
 
+
 class UserController extends AppBaseController
 {
     private $userRepository;

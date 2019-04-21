@@ -29,6 +29,14 @@ class UsersTableSeeder extends Seeder
                 'created_at' => date_create(),
                 'updated_at' => date_create()
             ],
+            [
+                'name' => 'Rocha',
+                'lastname' => 'Leandro',
+                'email' => 'rochaleandroleonel@gmail.com.ar',
+                'password' => Hash::make('1234'),
+                'created_at' => date_create(),
+                'updated_at' => date_create()
+            ],
         ]);
 
     }
