@@ -20,7 +20,6 @@ Route::group(['middleware' => 'auth'], function () {
     // Sidebar Web
     Route::resource('users', 'UserController');
  
-
     Route::resource('events', 'EventController');
 
     Route::resource('images', 'ImageController');
@@ -30,6 +29,10 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('sliders', 'SliderController');
 
     Route::resource('medias', 'MediaController');
+
+    require(__DIR__ . '/PermissionRoutes.php');
+    require(__DIR__ . '/RolesRoutes.php');
+
 
     Route::get('medias/create/present', [
         'as' => 'medias.create.present',
