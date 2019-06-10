@@ -17,34 +17,83 @@
             </a>
         </li>
 
+        <li class="{{ Request::is('usuarios*') ? 'active' : '' }} nav-item">
+            <a href="{!! route('users.index') !!}" class="nav-link">
+                <i class="mdi mdi-account-multiple menu-icon"></i>
+                <span >Modelos</span>
+            </a>
+        </li>
+
+        <li class="{{ Request::is('usuarios*') ? 'active' : '' }} nav-item">
+            <a href="{!! route('users.index') !!}" class="nav-link">
+                <i class="mdi mdi-account-multiple menu-icon"></i>
+                <span >Materiales</span>
+            </a>
+        </li>
+
+        <li class="{{ Request::is('usuarios*') ? 'active' : '' }} nav-item">
+            <a href="{!! route('users.index') !!}" class="nav-link">
+                <i class="mdi mdi-account-multiple menu-icon"></i>
+                <span >Productores</span>
+            </a>
+        </li>
+
+        <li class="{{ Request::is('usuarios*') ? 'active' : '' }} nav-item">
+            <a href="{!! route('users.index') !!}" class="nav-link">
+                <i class="mdi mdi-account-multiple menu-icon"></i>
+                <span >Astilleros</span>
+            </a>
+        </li>
+
+        <li class="{{ Request::is('usuarios*') ? 'active' : '' }} nav-item">
+            <a href="{!! route('users.index') !!}" class="nav-link">
+                <i class="mdi mdi-account-multiple menu-icon"></i>
+                <span >Tipos</span>
+            </a>
+        </li>
+
+        <li class="{{ Request::is('usuarios*') ? 'active' : '' }} nav-item">
+            <a href="{!! route('users.index') !!}" class="nav-link">
+                <i class="mdi mdi-account-multiple menu-icon"></i>
+                <span >Tipos de combustible</span>
+            </a>
+        </li>
+
+        {{--
+       
         <li class="{{ Request::is('eventos*') ? 'active' : '' }} nav-item">
             <a href="{!! route('events.index') !!}" class="nav-link">
                 <i class="mdi mdi-receipt menu-icon"></i>
                 <span class="menu-title">Eventos</span>
             </a>
         </li>
-
+        --}}
+        
+        {{--
         <li class="{{ Request::is('imagenes*') ? 'active' : '' }} nav-item">
             <a href="{!! route('medias.index') !!}" class="nav-link">
                 <i class="mdi mdi-image menu-icon"></i>
                 <span class="menu-title">Media</span>
             </a>
         </li>
-
+        --}}
+        
+        {{--
         <li class="{{ Request::is('categories') ? 'active' : '' }} nav-item">
             <a href="{!! route('categories.index') !!}" class="nav-link">
                 <i class="mdi mdi-cloud-tags menu-icon"></i>
                 <span class="menu-title">Categorias</span>
             </a>
         </li>
-
+        --}}
+        {{--
         <li class="{{ Request::is('sliders*') ? 'active' : '' }} nav-item">
             <a href="{!! route('sliders.index') !!}" class="nav-link">
                 <i class="mdi mdi-folder-multiple-image menu-icon"></i>
                 <span class="menu-title">Sliders</span>
             </a>
         </li>
-
+         --}}
     </ul>
 </nav>
 

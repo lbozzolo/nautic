@@ -20,7 +20,6 @@ Route::group(['middleware' => 'auth'], function () {
     // Sidebar Web
     Route::resource('users', 'UserController');
  
-
     Route::resource('events', 'EventController');
 
     Route::resource('images', 'ImageController');
@@ -79,6 +78,7 @@ Route::group(['middleware' => 'auth'], function () {
         'uses' => 'SliderController@activate'
     ]);
 
-
+    require(__DIR__ . '/admin/modelsRoute.php');
+    dd(__DIR__ . '/admin/modelsRoute.php');
 });
 
