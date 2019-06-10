@@ -10,11 +10,31 @@
             {{--</li>--}}
         {{--@endif--}}
 
-        <li class="{{ Request::is('usuarios*') ? 'active' : '' }} nav-item">
-            <a href="{!! route('users.index') !!}" class="nav-link">
-                <i class="mdi mdi-account-multiple menu-icon"></i>
-                <span >Usuarios</span>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#config" aria-expanded="false" aria-controls="config">
+                <i class="menu-icon mdi mdi-settings "></i>
+                <span class="menu-title">Configuración</span>
+                <i class="menu-arrow"></i>
             </a>
+            <div class="collapse" id="config">
+                <ul class="nav flex-column sub-menu">
+                    <li class="{{ Request::is('usuarios*') ? 'active' : '' }} nav-item">
+                        <a href="{!! route('users.index') !!}" class="nav-link">
+                            <span >Usuarios</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('roles.index')}}">
+                            <span class="menu-title">Roles</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="menu-title">Permisos</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </li>
 
         <li class="{{ Request::is('usuarios*') ? 'active' : '' }} nav-item">

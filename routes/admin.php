@@ -30,6 +30,10 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::resource('medias', 'MediaController');
 
+    require(__DIR__ . '/PermissionRoutes.php');
+    require(__DIR__ . '/RolesRoutes.php');
+
+
     Route::get('medias/create/present', [
         'as' => 'medias.create.present',
         'uses' => 'MediaController@createPresent',
