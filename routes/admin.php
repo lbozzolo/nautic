@@ -32,7 +32,7 @@ Route::group(['middleware' => 'auth'], function () {
 
     require(__DIR__ . '/PermissionRoutes.php');
     require(__DIR__ . '/RolesRoutes.php');
-
+    require(__DIR__ . '/admin/modelsRoute.php');
 
     Route::get('medias/create/present', [
         'as' => 'medias.create.present',
@@ -82,7 +82,7 @@ Route::group(['middleware' => 'auth'], function () {
         'uses' => 'SliderController@activate'
     ]);
 
-    require(__DIR__ . '/admin/modelsRoute.php');
-    dd(__DIR__ . '/admin/modelsRoute.php');
+    
+    
 });
 

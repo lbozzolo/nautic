@@ -1,49 +1,31 @@
-<?php
+<?php 
+Route::group(['prefix' => 'models'], function () {
 
-Route::group(['prefix'=> 'models'], function(){
-       
-        Route::get('index', [
-            'as' => 'models.index',
-            'uses' => 'ModelsController@index'
-        ]);
+    Route::get('/', [
+        'as' => 'models.index',
+        'uses' => 'ModelsController@index'
+    ]);
 
-        Route::get('create', [
-            'as' => 'models.create',
-            'uses' => 'ModelsController@create'
-        ]);
+    Route::get('/models', [
+        'as' => 'permissions.create',
+        'uses' => 'ModelsController@present'
+    ]);
 
-        Route::post('store', [
-            'as' => 'models.store',
-            'uses' => 'ModelsController@store'
-        ]);
+    Route::get('/edit', [
+        'as' => 'models.edit',
+        'uses' => 'ModelsController@works'
+    ]);
 
-        Route::group(['prefix' => '{id?}'], function() {
+    Route::get('/update', [
+        'as' => 'models.update',
+        'uses' => 'ModelsController@update'
+    ]);
 
+    Route::get('/destroy', [
+        'as' => 'models.destroy',
+        'uses' => 'ModelsController@destroy'
+    ]);
 
-            Route::get('edit', [
-                'as' => 'models.edit',
-                'uses' => 'ModelsController@edit'        
-            ]);
+ 
 
-            Route::get('show', [
-                'as' => 'models.show',
-                'uses' => 'ModelsController@show'
-            ]);
-
-            Route::put('udpate', [
-                'as' => 'models.update',
-                'uses' => 'ModelsController@update'        
-            ]);
-
-            Route::delete('destroy', [
-                'as' => 'models.destroy',
-                'uses' => 'ModelsController@destroy'        
-            ]);
-
-
-
-        });
-        
-
-
-    });
+});
