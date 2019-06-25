@@ -4,11 +4,11 @@ namespace Nautic\Models;
 
 use Nautic\Models\Entity as Entity;
 
-class Model extends Entity
+class Shipyard extends Entity
 {
-    public $table = 'models';
+    public $table = 'shipyards';
 
-    public $fillable = ['name','slug'];
+    public $fillable = ['name','city','lat','long'];
 
 
 

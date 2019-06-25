@@ -13,7 +13,18 @@ class CreateProducersTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('producers', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
+
+            $table->increments('id');
+            $table->string('name');
+            
+
+            $table->index('id');
+
+            $table->timestamps();
+            $table->softDeletes();
+        });
     }
 
     /**
@@ -23,6 +34,6 @@ class CreateProducersTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('producers');
     }
 }

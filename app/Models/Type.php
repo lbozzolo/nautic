@@ -4,9 +4,9 @@ namespace Nautic\Models;
 
 use Nautic\Models\Entity as Entity;
 
-class Model extends Entity
+class Type extends Entity
 {
-    public $table = 'models';
+    public $table = 'types';
 
     public $fillable = ['name','slug'];
 
@@ -18,6 +18,6 @@ class Model extends Entity
      * @var array
      */
     public static $rules = [
-        'name' => 'required'
+        'type' => 'required'
     ];
 }

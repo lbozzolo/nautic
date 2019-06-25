@@ -32,7 +32,12 @@ Route::group(['middleware' => 'auth'], function () {
 
     require(__DIR__ . '/PermissionRoutes.php');
     require(__DIR__ . '/RolesRoutes.php');
-    require(__DIR__ . '/admin/modelsRoute.php');
+    require(__DIR__ . '/admin/modelsRoutes.php');
+    require(__DIR__ . '/admin/materialsRoutes.php');
+    require(__DIR__ . '/admin/typesRoutes.php');
+    require(__DIR__ . '/admin/producersRoutes.php');
+    require(__DIR__ . '/admin/fueltypesRoutes.php');
+    require(__DIR__ . '/admin/shipyardsRoutes.php');
 
     Route::get('medias/create/present', [
         'as' => 'medias.create.present',

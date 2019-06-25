@@ -13,7 +13,7 @@ class CreateModelsTable extends Migration
      */
     public function up()
     {
-        Schema::create('modelos', function (Blueprint $table) {
+        Schema::create('models', function (Blueprint $table) {
             $table->engine = 'InnoDB';
 
             $table->increments('id');
@@ -34,6 +34,6 @@ class CreateModelsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('modelos');
+        Schema::drop('models');
     }
 }

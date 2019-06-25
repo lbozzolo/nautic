@@ -13,7 +13,19 @@ class CreateTypesTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('types', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
+
+            $table->increments('id');
+            $table->string('name');
+            $table->string('slug');
+            
+
+            $table->index('id');
+
+            $table->timestamps();
+            $table->softDeletes();
+        });
     }
 
     /**
@@ -23,6 +35,6 @@ class CreateTypesTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('types');
     }
 }

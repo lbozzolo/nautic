@@ -13,7 +13,19 @@ class CreateFueltypesTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('fueltypes', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
+
+            $table->increments('id');
+            $table->string('name');
+            $table->string('slug');
+            
+
+            $table->index('id');
+
+            $table->timestamps();
+            $table->softDeletes();
+        });
     }
 
     /**
@@ -23,6 +35,6 @@ class CreateFueltypesTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('fueltypes');
     }
 }

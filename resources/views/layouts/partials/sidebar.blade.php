@@ -37,43 +37,43 @@
             </div>
         </li>
 
-        <li class="{{ Request::is('usuarios*') ? 'active' : '' }} nav-item">
-            <a href="{!! route('users.index') !!}" class="nav-link">
+        <li class="{{ Request::is('models*') ? 'active' : '' }} nav-item">
+            <a href="{!! route('models.index') !!}" class="nav-link">
                 <i class="mdi mdi-account-multiple menu-icon"></i>
                 <span >Modelos</span>
             </a>
         </li>
 
-        <li class="{{ Request::is('usuarios*') ? 'active' : '' }} nav-item">
-            <a href="{!! route('users.index') !!}" class="nav-link">
+        <li class="{{ Request::is('materials*') ? 'active' : '' }} nav-item">
+            <a href="{!! route('materials.index') !!}" class="nav-link">
                 <i class="mdi mdi-account-multiple menu-icon"></i>
                 <span >Materiales</span>
             </a>
         </li>
 
-        <li class="{{ Request::is('usuarios*') ? 'active' : '' }} nav-item">
-            <a href="{!! route('users.index') !!}" class="nav-link">
+        <li class="{{ Request::is('producers*') ? 'active' : '' }} nav-item">
+            <a href="{!! route('producers.index') !!}" class="nav-link">
                 <i class="mdi mdi-account-multiple menu-icon"></i>
                 <span >Productores</span>
             </a>
         </li>
 
-        <li class="{{ Request::is('usuarios*') ? 'active' : '' }} nav-item">
-            <a href="{!! route('users.index') !!}" class="nav-link">
+        <li class="{{ Request::is('shipyards*') ? 'active' : '' }} nav-item">
+            <a href="{!! route('shipyards.index') !!}" class="nav-link">
                 <i class="mdi mdi-account-multiple menu-icon"></i>
                 <span >Astilleros</span>
             </a>
         </li>
 
-        <li class="{{ Request::is('usuarios*') ? 'active' : '' }} nav-item">
-            <a href="{!! route('users.index') !!}" class="nav-link">
+        <li class="{{ Request::is('types*') ? 'active' : '' }} nav-item">
+            <a href="{!! route('types.index') !!}" class="nav-link">
                 <i class="mdi mdi-account-multiple menu-icon"></i>
                 <span >Tipos</span>
             </a>
         </li>
 
-        <li class="{{ Request::is('usuarios*') ? 'active' : '' }} nav-item">
-            <a href="{!! route('users.index') !!}" class="nav-link">
+        <li class="{{ Request::is('fueltypes*') ? 'active' : '' }} nav-item">
+            <a href="{!! route('fueltypes.index') !!}" class="nav-link">
                 <i class="mdi mdi-account-multiple menu-icon"></i>
                 <span >Tipos de combustible</span>
             </a>
